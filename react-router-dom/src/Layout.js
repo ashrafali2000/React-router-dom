@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default  function Layout(){
     return(<div>
@@ -8,7 +8,5 @@ export default  function Layout(){
     <Link to= {"/about"}>About</Link>
     <Link to= {"/Dashboard"}>Dashboard</Link>
 </div>
-
-        {/* <Outlet></Outlet> */}
     </div>)
 }

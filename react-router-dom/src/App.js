@@ -1,5 +1,5 @@
 // import './App.css';
-import { Outlet, Route, Routes} from "react-router-dom"
+import {  Route, Routes} from "react-router-dom"
 import Home from "./Home";
 
 import Dashboard from "./Dashboard";
@@ -16,7 +16,7 @@ function App() {
    <Route path="about" element={<About></About>} />
    <Route path="Dashboard" element={<Dashboard></Dashboard>} />
    </Routes>
-   <Outlet></Outlet>
+  
     </div>
   );
 }
