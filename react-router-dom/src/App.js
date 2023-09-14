@@ -9,12 +9,35 @@ import About from "./about";
 import Contact from "./about/contact";
 import Information from "./about/address/information";
 import Street from "./about/address/streetNo";
+import { useState } from 'react';
 function App() {
+// yeha say hy
+const [products, setProducts] = useState([]);
+
+const searchHandlerBtn = (val) => {
+fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${val}`)
+.then((response => response.json()))
+.then(item => {
+  const myData = item.data.recipes;
+  setProducts(myData);
+  console.log(myData)
+})
+}
+
+const inputSearchHandler = (value) =>  {
+  // event.preventDefault();
+  // const value = event.target.value;
+  searchHandlerBtn(value)
+    console.log(value);
+   
+  }
+
   return (
     <div>
    <Routes>
-   <Route path="/" element={<Layout></Layout>} >
-   <Route index element={<Home></Home>} />
+   <Route path="/" element={<Layout searchHandlerBtn ={searchHandlerBtn}  inputSearchHandler = {inputSearchHandler}></Layout>} >
+
+   <Route index element={<Home products = {products}></Home>} />
 
 {/* nested routes */}
    <Route path="about/" element={""}>

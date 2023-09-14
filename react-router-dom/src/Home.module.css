@@ -3,14 +3,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 29px;
 }
 .HomePageHeading{
-    
+ background-color: khaki;
+ color: red;
+ padding: 20px 30px;
+ border-radius: 20px;
 }
 .myCarousel,.myCarouselImages{
-    width: 700px;
+    width: 650px;
     height: 400px;
 }
 
 .myCarouselImages{
+}
+
+.myCarousel{
+    background-color: cadetblue;
 }

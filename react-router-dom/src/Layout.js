@@ -7,7 +7,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Outlet } from 'react-router-dom';
 
-function Layout() {
+
+function Layout({searchHandlerBtn, inputSearchHandler}) {
+
   return (
     <>
       {['sm'].map((expand) => (
@@ -61,12 +63,13 @@ function Layout() {
                 </Nav>
                 <Form className="d-flex">
                   <Form.Control
-                    type="search"
+                    type="Search"
+                    onSearch={inputSearchHandler}
                     placeholder="Search"
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="outline-success" type="submit" onClick= {searchHandlerBtn} >Search</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
