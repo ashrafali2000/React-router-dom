@@ -1,3 +1,4 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -6,7 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Outlet } from 'react-router-dom';
-
+import { Input, Space } from 'antd';
+const { Search } = Input;
 
 function Layout({searchHandlerBtn, inputSearchHandler}) {
 
@@ -15,7 +17,7 @@ function Layout({searchHandlerBtn, inputSearchHandler}) {
       {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className=" mb-3">
           <Container fluid >
-            <Navbar.Brand href="#">React-router-dom</Navbar.Brand>
+            <Navbar.Brand href="#">Foods</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -66,7 +68,6 @@ function Layout({searchHandlerBtn, inputSearchHandler}) {
       placeholder="input search text"
       enterButton="Search"
       size="large"
-      suffix={suffix}
       onSearch={inputSearchHandler}
     />
               </Offcanvas.Body>

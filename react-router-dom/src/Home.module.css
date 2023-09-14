@@ -11,6 +11,28 @@
  padding: 20px 30px;
  border-radius: 20px;
 }
+.cardsHome{
+    background-color: antiquewhite;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardsImages{
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+}
+
+.allProductHome{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
 .myCarousel,.myCarouselImages{
     width: 650px;
     height: 400px;
@@ -21,4 +43,23 @@
 
 .myCarousel{
     background-color: cadetblue;
+}
+
+@media screen and (max-width:576px) {
+    .myCarousel,.myCarouselImages{
+        width: 350px;
+        height: 250px;
+    }
+    .cardsImages{
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+    }
+    .cardsHome{
+        background-color: antiquewhite;
+        padding: 5px;
+    }
+    .cardTitle{
+        font-size: 18px;
+    }
 }

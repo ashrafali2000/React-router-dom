@@ -6,13 +6,9 @@ import exampleCarouselImage2 from './components/images/grapes.jpg';
 import exampleCarouselImage3 from './components/images/burger.jpg';
 import exampleCarouselImage4 from './components/images/burger1.png';
 import exampleCarouselImage5 from './components/images/buger2.png';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import React from 'react';
-import { Input, Space } from 'antd';
-const { Search } = Input;
-
+import {  Card } from 'antd';
 import { Image } from 'react-bootstrap';
+
 export default function Home({products}) {
     const [index, setIndex] = useState(0);
 
@@ -65,18 +61,11 @@ export default function Home({products}) {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        <div>
-            {products.map((item) =>  <Card key={Math.random()} style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Image src={item.image_url}></Image>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
+        <div className={styles.allProductHome}>
+            {products.map((item) =>  <Card  key={Math.random()} className={styles.cardsHome}>
+      <Image className={styles.cardsImages} src={item.image_url} />
+      <h4 className={styles.cardTitle}>{item.title.slice(0,19)}..</h4>
+
     </Card> )}
         </div>
     </div>)
