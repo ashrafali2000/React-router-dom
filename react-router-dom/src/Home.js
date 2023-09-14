@@ -8,6 +8,9 @@ import exampleCarouselImage4 from './components/images/burger1.png';
 import exampleCarouselImage5 from './components/images/buger2.png';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import React from 'react';
+import { Input, Space } from 'antd';
+const { Search } = Input;
 
 import { Image } from 'react-bootstrap';
 export default function Home({products}) {

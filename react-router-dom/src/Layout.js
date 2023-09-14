@@ -61,16 +61,14 @@ function Layout({searchHandlerBtn, inputSearchHandler}) {
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="Search"
-                    onSearch={inputSearchHandler}
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success" type="submit" onClick= {searchHandlerBtn} >Search</Button>
-                </Form>
+
+                <Search
+      placeholder="input search text"
+      enterButton="Search"
+      size="large"
+      suffix={suffix}
+      onSearch={inputSearchHandler}
+    />
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

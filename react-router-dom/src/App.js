@@ -25,8 +25,6 @@ fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${val}`)
 }
 
 const inputSearchHandler = (value) =>  {
-  // event.preventDefault();
-  // const value = event.target.value;
   searchHandlerBtn(value)
     console.log(value);
    
