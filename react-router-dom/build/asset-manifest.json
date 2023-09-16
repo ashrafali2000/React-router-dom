@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fb3643ff.css",
+    "main.js": "/static/js/main.f2a849fb.js",
+    "static/js/787.228929fe.chunk.js": "/static/js/787.228929fe.chunk.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fruits.jpg": "/static/media/fruits.348b1d59b9c58fad3f78.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/burger1.png": "/static/media/burger1.7cb2545c7f4d5b2b7629.png",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/burger.jpg": "/static/media/burger.c2ed426c2e814acdc1b8.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/buger2.png": "/static/media/buger2.74728e420ff2f70e7877.png",
+    "static/media/grapes.jpg": "/static/media/grapes.27fada0f5edd844ee5ec.jpg",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/mylogo.PNG": "/static/media/mylogo.a2500427228a844daf6f.PNG",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/index.html",
+    "main.fb3643ff.css.map": "/static/css/main.fb3643ff.css.map",
+    "main.f2a849fb.js.map": "/static/js/main.f2a849fb.js.map",
+    "787.228929fe.chunk.js.map": "/static/js/787.228929fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb3643ff.css",
+    "static/js/main.f2a849fb.js"
+  ]
+}
