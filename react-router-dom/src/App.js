@@ -10,6 +10,7 @@ import Contact from "./about/contact";
 import Information from "./about/address/information";
 import Street from "./about/address/streetNo";
 import { useState } from 'react';
+import Footer from './components/footer/indes';
 function App() {
 // yeha say hy
 const [products, setProducts] = useState([]);
@@ -56,8 +57,12 @@ const inputSearchHandler = (value) =>  {
    <Route path="Dashboard" element={<Dashboard></Dashboard>} />
 
    </Route>
+{/* footer */}
+   <Route path='/' element = {<Footer></Footer>}>
+   </Route>
+   
    </Routes>
-  
+
     </div>
   );
 }

@@ -6,13 +6,13 @@
     gap: 29px;
 }
 .HomePageHeading{
- background-color: khaki;
+    background-color: rgb(222, 218, 181);
  color: red;
  padding: 20px 30px;
  border-radius: 20px;
 }
 .cardsHome{
-    background-color: antiquewhite;
+    background-color: rgb(222, 218, 181);
     padding: 15px;
     display: flex;
     justify-content: center;
