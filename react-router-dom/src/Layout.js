@@ -7,7 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Outlet } from 'react-router-dom';
-import { Input, Space } from 'antd';
+import { Image, Input, Space } from 'antd';
+import logo from "../src/components/images/mylogo.PNG"
 const { Search } = Input;
 
 function Layout({searchHandlerBtn, inputSearchHandler}) {
@@ -17,7 +18,7 @@ function Layout({searchHandlerBtn, inputSearchHandler}) {
       {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className=" mb-3">
           <Container fluid >
-            <Navbar.Brand href="#">Foods</Navbar.Brand>
+            <Image src={logo} width={220} height={78}></Image>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
