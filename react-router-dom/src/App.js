@@ -58,7 +58,8 @@ const inputSearchHandler = (value) =>  {
 
    </Route>
 {/* footer */}
-   <Route path='/' element = {<Footer></Footer>}>
+   <Route path='/' element = {""}>
+   <Route index element={<Footer />} />
    </Route>
    
    </Routes>
