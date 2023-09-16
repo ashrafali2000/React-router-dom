@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Outlet } from 'react-router-dom';
 import { Image, Input, Space } from 'antd';
+import {GiHamburgerMenu} from "react-icons/gi"
 import logo from "../src/components/images/mylogo.PNG"
 const { Search } = Input;
 
@@ -19,7 +20,7 @@ function Layout({searchHandlerBtn, inputSearchHandler}) {
         <Navbar key={expand} expand={expand} className=" mb-3">
           <Container fluid >
             <Image src={logo} width={220} height={78}></Image>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} style={{color:"#fff",backgroundColor:"#bbb"}}><GiHamburgerMenu></GiHamburgerMenu> </Navbar.Toggle>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -27,7 +28,7 @@ function Layout({searchHandlerBtn, inputSearchHandler}) {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                <Image src={logo} width={220} height={78}></Image>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
